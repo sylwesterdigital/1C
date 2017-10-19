@@ -51,7 +51,7 @@
 		// Default settings
 		defaults: {
 			starColor:	"rgba(255,255,255,1)", 
-			bgColor:	"rgba(0,0,0,1)",
+			bgColor:	'black',
 			mouseMove:	true,
 			mouseColor:	"rgba(0,0,0,0.2)",
 			mouseSpeed:	20,
@@ -271,6 +271,29 @@
 					this.context.closePath();
 				}
 			}
+			
+			// animate background
+
+      // Create gradient
+      var grd = this.context.createRadialGradient(this.w/2, this.h/2, 0.000, this.w/2, this.h/2, this.w);
+  
+      grd.addColorStop(0.000, 'rgba(45, 45, 45, 1.000)');
+      grd.addColorStop(1.000, 'rgba(0, 0, 0, 1.000)');			
+			
+      // Add colors
+/*      grd.addColorStop(0.000, 'rgba(255, 0, 0, 1.000)');
+      grd.addColorStop(0.150, 'rgba(255, 0, 255, 1.000)');
+      grd.addColorStop(0.330, 'rgba(0, 0, 255, 1.000)');
+      grd.addColorStop(0.490, 'rgba(0, 255, 255, 1.000)');
+      grd.addColorStop(0.670, 'rgba(0, 255, 0, 1.000)');
+      grd.addColorStop(0.840, 'rgba(255, 255, 0, 1.000)');
+      grd.addColorStop(1.000, 'rgba(255, 0, 0, 1.000)');*/
+      
+      // Fill with gradient
+      this.context.fillStyle = grd;
+      //this.context.fillRect(0, 0, 300.000, 300.000);			
+			
+			
 
 		},
 
