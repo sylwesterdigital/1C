@@ -48,7 +48,7 @@
 //  43. Prototype Text-Decoration
 //  44. Prototype Text-Transformation
 //  45. Prototype Text-Utilities
-//  46. Responsive Embed
+//  46. Responsive Embedar
 //  47. Reveal
 //  48. Slider
 //  49. Switch
@@ -78,7 +78,7 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #000011;
+$black: rgba(0,0,0,1);
 $white: #fefefe;
 $body-background: black url("../../assets/img/background1.jpg") no-repeat center center fixed;
 //$body-background: red;
@@ -486,6 +486,11 @@ $menu-item-background-hover: $light-gray;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
 $menu-icons-back-compat: true;
+
+
+//TOP BAR
+
+
 
 // 24. Meter
 // ---------
